@@ -108,7 +108,7 @@ func dashboardHandler(w http.ResponseWriter, r *http.Request) {
 	}
 
 	username := sessions[cookie.Value]
-	fmt.Printf("👋 %s accessed dashboard\n", username)
+	fmt.Printf(" %s accessed dashboard\n", username)
 	http.ServeFile(w, r, "static/dashboard.html")
 }
 
